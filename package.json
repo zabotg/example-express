@@ -1,0 +1,21 @@
+{
+  "name": "covid-gbdi",
+  "version": "1.0.0",
+  "description": "Service responsible for handling users requests, such as user creation, validation, document acquiring and enabling/disabling access to the Covid System 2020.",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zabotg <zabot.gui@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@types/express": "^4.17.6"
+  }
+}

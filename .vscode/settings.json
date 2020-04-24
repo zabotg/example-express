@@ -1,0 +1,21 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#5233ff",
+    "titleBar.inactiveBackground": "#5233ff",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
