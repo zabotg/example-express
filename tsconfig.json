@@ -9,8 +9,7 @@
     "outDir": "dist",
     "paths": {
       "@src/*": ["src/*"],
-      "@tests/*": ["tests/*"],
-      "@docs/*": ["docs/*"]
+      "@tests/*": ["tests/*"]
     },
 
     "sourceMap": true,
