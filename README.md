@@ -18,7 +18,13 @@ Node.js at version 10.15 or latter - [Download & Install Node.js](https://nodejs
 $ sudo apt install nodejs
 ```
 
-_Note: You can also install a Version Manager as [n](https://github.com/tj/n), [NVM](https://github.com/nvm-sh/nvm) or [asdf](https://github.com/asdf-vm/asdf) to control the node versions._
+##### Express
+
+Express at version 4.17.1 or latter - [Download & Install Express](https://expressjs.com/en/starter/installing.html)
+
+```shell
+$ npm install express --save
+```
 
 #### Linting
 
