@@ -6,5 +6,5 @@ app.listen(3000, () => {
 });
 
 app.get('/test', (request, response) => {
-  response.json(['Tony', 'Lisa', 'Michael', 'Ginger', 'Food']);
+  response.json({ name: 'Tony', birthdate: '01/25/2020' });
 });
