@@ -54,5 +54,5 @@ $ yarn test
 To running locally, please run:
 
 ```shell
-$ yarn start
+$ node app.ts
 ```
