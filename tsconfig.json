@@ -6,15 +6,12 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "baseUrl": ".",
-    "outDir": "dist",
     "paths": {
       "@src/*": ["src/*"],
       "@tests/*": ["tests/*"]
     },
 
     "sourceMap": true,
-    "removeComments": true,
-
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -27,10 +24,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
-
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
   },
   "include": ["src", "tests"],
-  "exclude": ["node_modules", "dist", ".webpack"]
+  "exclude": ["node_modules"]
 }
