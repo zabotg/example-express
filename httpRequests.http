@@ -1,0 +1,19 @@
+POST /send-user HTTP/1.1
+Host: localhost:3000
+content-type: application/json
+
+{
+    "firstNumber": 7,
+    "secondNumber": 6
+}
+
+###
+#Wrong parameters test
+POST /send-user HTTP/1.1
+Host: localhost:3000
+content-type: application/json
+
+{
+    "valorErrado": 5,
+    "secondNumber": 6
+}

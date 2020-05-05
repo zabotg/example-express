@@ -4,6 +4,7 @@
   "description": "Service responsible for handling users requests, such as user creation, validation, document acquiring and enabling/disabling access to the Covid System 2020.",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.3"
   },
