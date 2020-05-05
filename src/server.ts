@@ -15,7 +15,7 @@ server.get('/', (_req, resp) => {
   resp.send('Hello ts-node!');
 });
 
-server.post('/send-user', (req, res) => {
+server.post('/sum-two-numbers', (req, res) => {
   const {firstNumber, secondNumber} = req.body;
   if(firstNumber && secondNumber) {
     const result = somadoisNumeros(firstNumber, secondNumber)
