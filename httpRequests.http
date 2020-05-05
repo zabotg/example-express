@@ -14,6 +14,6 @@ Host: localhost:3000
 content-type: application/json
 
 {
-    "valorErrado": 5,
+    "wrongParameter": 5,
     "secondNumber": 6
 }

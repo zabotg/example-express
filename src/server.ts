@@ -7,7 +7,7 @@ server.use(bodyParser.urlencoded({
   extended: true
 }));
 
-const somadoisNumeros = (firstNumber: number, secondNumber: number): number => {
+const sumTwoNumbers = (firstNumber: number, secondNumber: number): number => {
   return firstNumber + secondNumber;
 }
 
@@ -18,7 +18,7 @@ server.get('/', (_req, resp) => {
 server.post('/sum-two-numbers', (req, res) => {
   const {firstNumber, secondNumber} = req.body;
   if(firstNumber && secondNumber) {
-    const result = somadoisNumeros(firstNumber, secondNumber)
+    const result = sumTwoNumbers(firstNumber, secondNumber)
     res.status(200).send(`${result}`)
   }
   else {
