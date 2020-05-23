@@ -1,7 +1,7 @@
 {
-  "name": "covid-gbdi",
+  "name": "Teste-app",
   "version": "1.0.0",
-  "description": "Service responsible for handling users requests, such as user creation, validation, document acquiring and enabling/disabling access to the Covid System 2020.",
+  "description": "Service responsible to get informations.",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -37,9 +37,9 @@
     "test": "mocha -r ts-node/register tests/**/**.test.ts",
     "ts-check:watch": "yarn ts-check -w",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "lint:fix": "eslint .ext 'src/**/*.ts' --fix",
     "start": "nodemon --watch src/ --exec ts-node src/index.ts -e ts"
   },
-  "author": "GBDI",
+  "author": "Guilherme Zabot",
   "private": true
 }
