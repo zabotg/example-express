@@ -1,3 +1,5 @@
+import insertUser from "../src/controllers/user";
+import { UserRequest } from './entities/user';
 import express from 'express';
 import bodyParser from 'body-parser';
 
@@ -7,21 +9,18 @@ server.use(bodyParser.urlencoded({
   extended: true
 }));
 
-const sumTwoNumbers = (firstNumber: number, secondNumber: number): number => {
-  return firstNumber + secondNumber;
-}
 
 server.get('/', (_req, resp) => {
   resp.send('Hello ts-node!');
 });
 
-server.post('/sum-two-numbers', (req, res) => {
-  const {firstNumber, secondNumber} = req.body;
-  if(firstNumber && secondNumber) {
-    const result = sumTwoNumbers(firstNumber, secondNumber)
+server.post('/insertUser', (req, res) => {
+  try {
+    const userRequest: UserRequest = req.body;
+    const result = insertUser(userRequest);
     res.status(200).send(`${result}`)
-  }
-  else {
+  } catch (err) {
+    console.error(err);
     res.status(400).send('Wrong body parameters!')
   }
 });
