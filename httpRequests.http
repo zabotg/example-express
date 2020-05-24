@@ -9,11 +9,11 @@ content-type: application/json
 
 ###
 #Wrong parameters test
-POST /sum-two-numbers HTTP/1.1
+POST /user/create HTTP/1.1
 Host: localhost:3000
 content-type: application/json
 
 {
-    "wrongParameter": 5,
-    "secondNumber": 6
+    "fullName": "Some User",
+    "birthDate": "01/02/2003"
 }
