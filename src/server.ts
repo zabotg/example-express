@@ -9,6 +9,7 @@ server.use(bodyParser.urlencoded({
   extended: true
 }));
 
+
 // Verify authentication
 const verifyAuth = (request: any, response: any, next: any): any => {
   const bearerHeader = request.headers['authorization'];
@@ -56,5 +57,8 @@ server.post('/auth', (_request, response) => {
     });
   });
 });
+
+// server.use("/user/", userRoutes);
+// server.use("/account/", accountsRoutes);
 
 export default server;

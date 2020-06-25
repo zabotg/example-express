@@ -1,8 +1,4 @@
-# covid-GBdI-2020
-
-Service responsible for handling users requests, such as user creation, validation, document acquiring and enabling/disabling access to the Covid System 2020.
-
-## Getting Started
+# Example express
 
 These instructions will get you a copy of the banking up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
