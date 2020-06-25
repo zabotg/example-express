@@ -1,19 +1,20 @@
-POST /sum-two-numbers HTTP/1.1
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6IlNvbWUgdXNlciIsImVtYWlsIjoic29tZXVzZXJAZ21haWwuY29tIn0sImlhdCI6MTU5MzA1ODA4NX0.fi3nBFuSYhk9klVXAwIcA911SXowVUerPn05mDShSoU
+GET / HTTP/1.1
 Host: localhost:3000
 content-type: application/json
 
-{
-    "firstNumber": 7,
-    "secondNumber": 6
-}
 
 ###
 #Wrong parameters test
-POST /user/create HTTP/1.1
+POST /auth HTTP/1.1
 Host: localhost:3000
 content-type: application/json
 
-{
-    "fullName": "Some User",
-    "birthDate": "01/02/2003"
-}
+
+###
+#teste post
+POST /api/post HTTP/1.1
+Host: localhost:3000
+content-type: application/json
+Authorization: Bearer {{token}}

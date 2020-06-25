@@ -4,9 +4,11 @@
   "description": "Service responsible to get informations.",
   "main": "index.js",
   "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.3"
     "uuidv4": "^6.0.9"
   },
   "devDependencies": {
@@ -35,11 +37,11 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/**.test.ts",
-    "ts-check:watch": "yarn ts-check -w",
+    "start": "nodemon --watch src/ --exec ts-node src/index.ts -e ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint .ext 'src/**/*.ts' --fix",
-    "start": "nodemon --watch src/ --exec ts-node src/index.ts -e ts"
+    "test": "mocha -r ts-node/register tests/**/**.test.ts",
+    "ts-check:watch": "yarn ts-check -w"
   },
   "author": "Guilherme Zabot",
   "private": true
