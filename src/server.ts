@@ -50,7 +50,7 @@ server.post('/auth', (_request, response) => {
     email: "someuser@gmail.com"
   }
 
-  jwt.sign({user}, 'secretkey', (_err: any,  token: any) => {
+  jwt.sign({user}, 'secretkey', { expiresIn: '30s'}, (_err: any,  token: any) => {
     response.json({
       token
     });
