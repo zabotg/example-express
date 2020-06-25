@@ -9,19 +9,3 @@ export const insertUser = (user: User): any => {
 		console.log(`User not inserted in DB!, ${err}`);
 	}
 };
-
-// const createTable = ( conn: any ) => {
- 
-// 	const sql = "CREATE TABLE IF NOT EXISTS Clientes (\n"+
-// 				"ID int NOT NULL AUTO_INCREMENT,\n"+
-// 				"Nome varchar(150) NOT NULL,\n"+
-// 				"CPF char(11) NOT NULL,\n"+
-// 				"PRIMARY KEY (ID)\n"+
-// 				");";
-	
-// 	conn.query(sql, function (error: any){
-// 		if(error) return console.log(error);
-// 		console.log('criou a tabela!');
-// 	});
-// 	conn.end();
-// }
