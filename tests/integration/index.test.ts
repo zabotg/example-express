@@ -12,7 +12,7 @@ describe('Integration index tests', () => {
         .end(function (err, res) {
            expect(err).to.be.null;
            expect(res).to.have.status(200);
-           expect(res.text).to.be.equal('Hello ts-node!')
+           expect(res.text).to.be.equal('{"message":"Wellcome to the API"}')
         });
     });
 });
