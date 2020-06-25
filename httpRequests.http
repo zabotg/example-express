@@ -1,3 +1,5 @@
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6IlNvbWUgdXNlciIsImVtYWlsIjoic29tZXVzZXJAZ21haWwuY29tIn0sImlhdCI6MTU5MzA1ODA4NX0.fi3nBFuSYhk9klVXAwIcA911SXowVUerPn05mDShSoU
 GET / HTTP/1.1
 Host: localhost:3000
 content-type: application/json
@@ -5,13 +7,14 @@ content-type: application/json
 
 ###
 #Wrong parameters test
-POST /insertUser HTTP/1.1
+POST /auth HTTP/1.1
 Host: localhost:3000
 content-type: application/json
 
-{
-    "fullName": "Some user",
-    "documentNumber": "098.890.989-89",
-    "motherName": "Teste",
-    "birthDate": "04/04/2000"
-}
+
+###
+#teste post
+POST /api/post HTTP/1.1
+Host: localhost:3000
+content-type: application/json
+Authorization: Bearer {{token}}
