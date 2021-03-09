@@ -1,0 +1,49 @@
+{
+  "name": "Teste-app",
+  "version": "1.0.0",
+  "description": "Service responsible to get informations.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "body-parser": "^1.19.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "uuidv4": "^6.0.9"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/expect": "^24.3.0",
+    "@types/express": "^4.17.6",
+    "@types/mocha": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "4.3.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-mocha": "^6.3.0",
+    "mocha": "^7.1.2",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0",
+    "ts-jest": "^25.4.0",
+    "ts-mocha": "^7.0.0",
+    "ts-node": "^8.9.0",
+    "ts-sinon": "^1.2.0",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "yarn build && . ./.env.development && node ./dist/index.js && node  ./dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint .ext 'src/**/*.ts' --fix",
+    "test": "mocha -r ts-node/register tests/**/**.test.ts",
+    "ts-check:watch": "yarn ts-check -w"
+  },
+  "author": "Guilherme Zabot",
+  "private": true
+}
