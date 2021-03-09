@@ -1,8 +1,18 @@
 {
   "name": "Teste-app",
   "version": "1.0.0",
-  "description": "Service responsible to get informations.",
+  "description": "Service responsible to study express.",
   "main": "index.js",
+  "author": "Guilherme Zabot",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "yarn build && . ./.env.development && node ./dist/src/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint .ext 'src/**/*.ts' --fix",
+    "test": "mocha -r ts-node/register tests/**/**.test.ts",
+    "ts-check:watch": "yarn ts-check -w"
+  },
   "dependencies": {
     "@types/jsonwebtoken": "^8.5.0",
     "body-parser": "^1.19.0",
@@ -35,15 +45,5 @@
     "ts-sinon": "^1.2.0",
     "tslint": "^6.1.1",
     "typescript": "^3.8.3"
-  },
-  "scripts": {
-    "build": "rm -rf dist && tsc",
-    "start": "yarn build && . ./.env.development && node ./dist/index.js && node  ./dist/index.js",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint .ext 'src/**/*.ts' --fix",
-    "test": "mocha -r ts-node/register tests/**/**.test.ts",
-    "ts-check:watch": "yarn ts-check -w"
-  },
-  "author": "Guilherme Zabot",
-  "private": true
+  }
 }
