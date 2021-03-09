@@ -9,10 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "outDir": "dist",
-
     "paths": {
-      "@src/*": ["src/*"],
-      "@tests/*": ["tests/*"]
+      "@src/*": ["src/*"]
     },
 
     "sourceMap": true,
