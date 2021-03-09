@@ -1,5 +1,9 @@
-# package directories
 node_modules
+dist
 
 .env
+
+yarn-error.log
+
 .vscode
+.DS_Store
